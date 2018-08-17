@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IPyVolume Widget</title>
+    
+</head>
+<body>
+
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.13.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "fe44712b94634e7ca39ead9df1346490": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.2.0",
+      "state": {
+        "_dom_classes": [],
+        "_model_module": "@jupyter-widgets/controls",
+        "_model_module_version": "1.2.0",
+        "_model_name": "HBoxModel",
+        "_view_count": null,
+        "_view_module": "@jupyter-widgets/controls",
+        "_view_module_version": "1.2.0",
+        "_view_name": "HBoxView",
+        "box_style": "",
+        "children": [
+          "IPY_MODEL_21c55c790ef240149d6df4e7d7370f7d",
+          "IPY_MODEL_e73fc181fcee4af491db05950949ab18",
+          "IPY_MODEL_72be08946762489b90ccf3230cdd6770",
+          "IPY_MODEL_1c28f02793134997b378eb3cca412fd7"
+        ],
+        "layout": "IPY_MODEL_1d290c48378049a5a9996b81b7a83c24"
+      }
+    },
+    "21c55c790ef240149d6df4e7d7370f7d": {
+      "model_name": "VBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.2.0",
+      "state": {
+        "_dom_classes": [],
+        "_model_module": "@jupyter-widgets/controls",
+        "_model_module_version": "1.2.0",
+        "_model_name": "VBoxModel",
+        "_view_count": null,
+        "_view_module": "@jupyter-widgets/controls",
+        "_view_module_version": "1.2.0",
+        "_view_name": "VBoxView",
+        "box_style": "",
+        "children": [
+          "IPY_MODEL_d9a66c3433a44b2a8e06b21822adf850"
+        ],
+        "layout": "IPY_MODEL_a9a963e2c66e45da8e5d00d100fd8396"
+      }
+    },
+    "d9a66c3433a44b2a8e06b21822adf850": {
+      "model_name": "FigureModel",
+      "model_module": "ipyvolume",
+      "model_module_version": "~0.4.6",
+      "state": {
+        "_dom_classes": [],
+        "_model_module": "ipyvolume",
+        "_model_module_version": "~0.4.6",
+        "_model_name": "FigureModel",
+        "_view_count": null,
+        "_view_module": "ipyvolume",
+        "_view_module_version": "~0.4.6",
+        "_view_name": "FigureView",
+        "ambient_coefficient": 0.5,
+        "angle_order": "XYZ",
+        "anglex": -0.7395898320250996,
+        "angley": 1.1327536906300582,
+        "anglez": 2.3809547695079774,
+        "animation": 1000.0,
+        "animation_exponent": 0.5,
+        "camera_center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "camera_control": "trackball",
+        "camera_fov": 45.0,
+        "data_max": 0.0,
+        "data_min": 0.0,
+        "diffuse_coefficient": 0.8,
+        "downscale": 1,
+        "eye_separation": 6.4,
+        "height": 500,
+        "layout": "IPY_MODEL_c22cc9c8e8374824884b6df0c10939e1",
+        "matrix_projection": [
+          3.017766952966369,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.414213562373095,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.000002000002,
+          -1.0,
+          0.0,
+          0.0,
+          -0.02000002000002,
+          0.0
+        ],
+        "matrix_world": [
+          -0.15363278782304512,
+          -0.1462071496763495,
+          0.4527918240088226,
+          0.0,
+          0.4757069787178267,
+          -0.057189561198567426,
+          0.14294133233278727,
+          0.0,
+          0.009991841916093877,
+          0.47471341193759503,
+          0.15667590632158787,
+          0.0,
+          -0.16603301640543772,
+          -0.13565835053133948,
+          -2.3762045313315996,
+          1.0
+        ],
+        "meshes": [],
+        "render_continuous": false,
+        "scatters": [
+          "IPY_MODEL_e73fc181fcee4af491db05950949ab18",
+          "IPY_MODEL_e247953910514d68b39187a15cfef491"
+        ],
+        "show": "Volume",
+        "specular_coefficient": 0.5,
+        "specular_exponent": 5.0,
+        "stereo": false,
+        "style": {
+          "axes": {
+            "visible": true,
+            "label": {
+              "color": "rgb(38, 38, 38)"
+            },
+            "ticklabel": {
+              "color": "black"
+            },
+            "x": {
+              "color": "rgb(38, 38, 38)"
+            },
+            "z": {
+              "color": "rgb(38, 38, 38)"
+            },
+            "y": {
+              "color": "rgb(38, 38, 38)"
+            },
+            "color": "rgb(204, 204, 204)"
+          },
+          "box": {
+            "visible": true
+          },
+          "background-color": "white",
+          "color": "rgb(38, 38, 38)"
+        },
+        "tf": null,
+        "volume_data": null,
+        "width": 400,
+        "xlabel": "x",
+        "xlim": [
+          -0.5,
+          1.5
+        ],
+        "ylabel": "y",
+        "ylim": [
+          -0.5,
+          1.5
+        ],
+        "zlabel": "z",
+        "zlim": [
+          -0.5,
+          1.5
+        ]
+      }
+    },
+    "c22cc9c8e8374824884b6df0c10939e1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.0.0",
+      "state": {
+        "_model_module": "@jupyter-widgets/base",
+        "_model_module_version": "1.0.0",
+        "_model_name": "LayoutModel",
+        "_view_count": null,
+        "_view_module": "@jupyter-widgets/base",
+        "_view_module_version": "1.0.0",
+        "_view_name": "LayoutView",
+        "align_content": null,
+        "align_items": null,
+        "align_self": null,
+        "border": null,
+        "bottom": null,
+        "display": null,
+        "flex": null,
+        "flex_flow": null,
+        "height": null,
+        "justify_content": null,
+        "left": null,
+        "margin": null,
+        "max_height": null,
+        "max_width": null,
+        "min_height": null,
+        "min_width": null,
+        "order": null,
+        "overflow": null,
+        "overflow_x": null,
+        "overflow_y": null,
+        "padding": null,
+        "right": null,
+        "top": null,
+        "visibility": null,
+        "width": null
+      }
+    },
+    "e73fc181fcee4af491db05950949ab18": {
+      "model_name": "ScatterModel",
+      "model_module": "ipyvolume",
+      "model_module_version": "~0.4.6",
+      "state": {
+        "_dom_classes": [],
+        "_model_module": "ipyvolume",
+        "_model_module_version": "~0.4.6",
+        "_model_name": "ScatterModel",
+        "_view_count": null,
+        "_view_module": "ipyvolume",
+        "_view_module_version": "~0.4.6",
+        "_view_name": "ScatterView",
+        "color": "blue",
+        "color_selected": "white",
+        "connected": false,
+        "geo": "sphere",
+        "layout": "IPY_MODEL_f749670abeb541319b0a6b67a50c9784",
+        "selected": null,
+        "sequence_index": 0,
+        "size": 10,
+        "size_selected": 2.6,
+        "visible": true,
+        "visible_lines": false,
+        "visible_markers": true,
+        "vx": null,
+        "vy": null,
+        "vz": null,
+        "x": [
+          {
+            "dtype": "float32",
+            "shape": [
+              9
+            ]
+          }
+        ],
+        "y": [
+          {
+            "dtype": "float32",
+            "shape": [
+              9
+            ]
+          }
+        ],
+        "z": [
+          {
+            "dtype": "float32",
+            "shape": [
+              9
+            ]
+          }
+        ]
+      },
+      "buffers": [
+        {
+          "encoding": "base64",
+          "path": [
+            "x",
+            0,
+            "buffer"
+          ],
+          "data": "AAAAAAAAgD8AAAAAAAAAAAAAgD8AAIA/AAAAAAAAgD8AAAA/"
+        },
+        {
+          "encoding": "base64",
+          "path": [
+            "y",
+            0,
+            "buffer"
+          ],
+          "data": "AAAAAAAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAgD8AAAA/"
+        },
+        {
+          "encoding": "base64",
+          "path": [
+            "z",
+            0,
+            "buffer"
+          ],
+          "data": "AAAAAAAAAAAAAAAAAACAPwAAAAAAAIA/AACAPwAAgD8AAAA/"
+        }
+      ]
+    },
+    "f749670abeb541319b0a6b67a50c9784": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.0.0",
+      "state": {
+        "_model_module": "@jupyter-widgets/base",
+        "_model_module_version": "1.0.0",
+        "_model_name": "LayoutModel",
+        "_view_count": null,
+        "_view_module": "@jupyter-widgets/base",
+        "_view_module_version": "1.0.0",
+        "_view_name": "LayoutView",
+        "align_content": null,
+        "align_items": null,
+        "align_self": null,
+        "border": null,
+        "bottom": null,
+        "display": null,
+        "flex": null,
+        "flex_flow": null,
+        "height": null,
+        "justify_content": null,
+        "left": null,
+        "margin": null,
+        "max_height": null,
+        "max_width": null,
+        "min_height": null,
+        "min_width": null,
+        "order": null,
+        "overflow": null,
+        "overflow_x": null,
+        "overflow_y": null,
+        "padding": null,
+        "right": null,
+        "top": null,
+        "visibility": null,
+        "width": null
+      }
+    },
+    "e247953910514d68b39187a15cfef491": {
+      "model_name": "ScatterModel",
+      "model_module": "ipyvolume",
+      "model_module_version": "~0.4.6",
+      "state": {
+        "_dom_classes": [],
+        "_model_module": "ipyvolume",
+        "_model_module_version": "~0.4.6",
+        "_model_name": "ScatterModel",
+        "_view_count": null,
+        "_view_module": "ipyvolume",
+        "_view_module_version": "~0.4.6",
+        "_view_name": "ScatterView",
+        "color": "black",
+        "color_selected": null,
+        "connected": true,
+        "geo": "diamond",
+        "layout": "IPY_MODEL_528221486402481da63b642b03ec8474",
+        "selected": null,
+        "sequence_index": 0,
+        "size": 1,
+        "size_selected": 1,
+        "visible": true,
+        "visible_lines": true,
+        "visible_markers": false,
+        "vx": null,
+        "vy": null,
+        "vz": null,
+        "x": [
+          {
+            "dtype": "float32",
+            "shape": [
+              17
+            ]
+          }
+        ],
+        "y": [
+          {
+            "dtype": "float32",
+            "shape": [
+              17
+            ]
+          }
+        ],
+        "z": [
+          {
+            "dtype": "float32",
+            "shape": [
+              17
+            ]
+          }
+        ]
+      },
+      "buffers": [
+        {
+          "encoding": "base64",
+          "path": [
+            "x",
+            0,
+            "buffer"
+          ],
+          "data": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAACAPwAAgD8AAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8="
+        },
+        {
+          "encoding": "base64",
+          "path": [
+            "y",
+            0,
+            "buffer"
+          ],
+          "data": "AAAAAAAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAAAA="
+        },
+        {
+          "encoding": "base64",
+          "path": [
+            "z",
+            0,
+            "buffer"
+          ],
+          "data": "AAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAACAPwAAgD8AAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAAAAAACAPwAAgD8="
+        }
+      ]
+    },
+    "528221486402481da63b642b03ec8474": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.0.0",
+      "state": {
+        "_model_module": "@jupyter-widgets/base",
+        "_model_module_version": "1.0.0",
+        "_model_name": "LayoutModel",
+        "_view_count": null,
+        "_view_module": "@jupyter-widgets/base",
+        "_view_module_version": "1.0.0",
+        "_view_name": "LayoutView",
+        "align_content": null,
+        "align_items": null,
+        "align_self": null,
+        "border": null,
+        "bottom": null,
+        "display": null,
+        "flex": null,
+        "flex_flow": null,
+        "height": null,
+        "justify_content": null,
+        "left": null,
+        "margin": null,
+        "max_height": null,
+        "max_width": null,
+        "min_height": null,
+        "min_width": null,
+        "order": null,
+        "overflow": null,
+        "overflow_x": null,
+        "overflow_y": null,
+        "padding": null,
+        "right": null,
+        "top": null,
+        "visibility": null,
+        "width": null
+      }
+    },
+    "a9a963e2c66e45da8e5d00d100fd8396": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.0.0",
+      "state": {
+        "_model_module": "@jupyter-widgets/base",
+        "_model_module_version": "1.0.0",
+        "_model_name": "LayoutModel",
+        "_view_count": null,
+        "_view_module": "@jupyter-widgets/base",
+        "_view_module_version": "1.0.0",
+        "_view_name": "LayoutView",
+        "align_content": null,
+        "align_items": null,
+        "align_self": null,
+        "border": null,
+        "bottom": null,
+        "display": null,
+        "flex": null,
+        "flex_flow": null,
+        "height": null,
+        "justify_content": null,
+        "left": null,
+        "margin": null,
+        "max_height": null,
+        "max_width": null,
+        "min_height": null,
+        "min_width": null,
+        "order": null,
+        "overflow": null,
+        "overflow_x": null,
+        "overflow_y": null,
+        "padding": null,
+        "right": null,
+        "top": null,
+        "visibility": null,
+        "width": null
+      }
+    },
+    "72be08946762489b90ccf3230cdd6770": {
+      "model_name": "FloatSliderModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.2.0",
+      "state": {
+        "_dom_classes": [],
+        "_model_module": "@jupyter-widgets/controls",
+        "_model_module_version": "1.2.0",
+        "_model_name": "FloatSliderModel",
+        "_view_count": null,
+        "_view_module": "@jupyter-widgets/controls",
+        "_view_module_version": "1.2.0",
+        "_view_name": "FloatSliderView",
+        "continuous_update": true,
+        "description": "Size",
+        "disabled": false,
+        "layout": "IPY_MODEL_ee465e142b5945f990e29510ce0c4786",
+        "max": 25.0,
+        "min": 1.0,
+        "orientation": "horizontal",
+        "readout": true,
+        "readout_format": ".2f",
+        "step": 0.1,
+        "style": "IPY_MODEL_c56ea4f48e0247cd8c1be0b41b49b2f2",
+        "value": 10.0
+      }
+    },
+    "ee465e142b5945f990e29510ce0c4786": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.0.0",
+      "state": {
+        "_model_module": "@jupyter-widgets/base",
+        "_model_module_version": "1.0.0",
+        "_model_name": "LayoutModel",
+        "_view_count": null,
+        "_view_module": "@jupyter-widgets/base",
+        "_view_module_version": "1.0.0",
+        "_view_name": "LayoutView",
+        "align_content": null,
+        "align_items": null,
+        "align_self": null,
+        "border": null,
+        "bottom": null,
+        "display": null,
+        "flex": null,
+        "flex_flow": null,
+        "height": null,
+        "justify_content": null,
+        "left": null,
+        "margin": null,
+        "max_height": null,
+        "max_width": null,
+        "min_height": null,
+        "min_width": null,
+        "order": null,
+        "overflow": null,
+        "overflow_x": null,
+        "overflow_y": null,
+        "padding": null,
+        "right": null,
+        "top": null,
+        "visibility": null,
+        "width": null
+      }
+    },
+    "c56ea4f48e0247cd8c1be0b41b49b2f2": {
+      "model_name": "SliderStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.2.0",
+      "state": {
+        "_model_module": "@jupyter-widgets/controls",
+        "_model_module_version": "1.2.0",
+        "_model_name": "SliderStyleModel",
+        "_view_count": null,
+        "_view_module": "@jupyter-widgets/base",
+        "_view_module_version": "1.0.0",
+        "_view_name": "StyleView",
+        "description_width": "",
+        "handle_color": null
+      }
+    },
+    "1c28f02793134997b378eb3cca412fd7": {
+      "model_name": "ColorPickerModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.2.0",
+      "state": {
+        "_dom_classes": [],
+        "_model_module": "@jupyter-widgets/controls",
+        "_model_module_version": "1.2.0",
+        "_model_name": "ColorPickerModel",
+        "_view_count": null,
+        "_view_module": "@jupyter-widgets/controls",
+        "_view_module_version": "1.2.0",
+        "_view_name": "ColorPickerView",
+        "concise": false,
+        "description": "Color",
+        "disabled": false,
+        "layout": "IPY_MODEL_92b474527a1348ecb40abfe01b6085cf",
+        "style": "IPY_MODEL_90b3c7824b984d01bdc6099add922114",
+        "value": "blue"
+      }
+    },
+    "92b474527a1348ecb40abfe01b6085cf": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.0.0",
+      "state": {
+        "_model_module": "@jupyter-widgets/base",
+        "_model_module_version": "1.0.0",
+        "_model_name": "LayoutModel",
+        "_view_count": null,
+        "_view_module": "@jupyter-widgets/base",
+        "_view_module_version": "1.0.0",
+        "_view_name": "LayoutView",
+        "align_content": null,
+        "align_items": null,
+        "align_self": null,
+        "border": null,
+        "bottom": null,
+        "display": null,
+        "flex": null,
+        "flex_flow": null,
+        "height": null,
+        "justify_content": null,
+        "left": null,
+        "margin": null,
+        "max_height": null,
+        "max_width": null,
+        "min_height": null,
+        "min_width": null,
+        "order": null,
+        "overflow": null,
+        "overflow_x": null,
+        "overflow_y": null,
+        "padding": null,
+        "right": null,
+        "top": null,
+        "visibility": null,
+        "width": null
+      }
+    },
+    "90b3c7824b984d01bdc6099add922114": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.2.0",
+      "state": {
+        "_model_module": "@jupyter-widgets/controls",
+        "_model_module_version": "1.2.0",
+        "_model_name": "DescriptionStyleModel",
+        "_view_count": null,
+        "_view_module": "@jupyter-widgets/base",
+        "_view_module_version": "1.0.0",
+        "_view_name": "StyleView",
+        "description_width": ""
+      }
+    },
+    "1d290c48378049a5a9996b81b7a83c24": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.0.0",
+      "state": {
+        "_model_module": "@jupyter-widgets/base",
+        "_model_module_version": "1.0.0",
+        "_model_name": "LayoutModel",
+        "_view_count": null,
+        "_view_module": "@jupyter-widgets/base",
+        "_view_module_version": "1.0.0",
+        "_view_name": "LayoutView",
+        "align_content": null,
+        "align_items": null,
+        "align_self": null,
+        "border": null,
+        "bottom": null,
+        "display": null,
+        "flex": null,
+        "flex_flow": null,
+        "height": null,
+        "justify_content": null,
+        "left": null,
+        "margin": null,
+        "max_height": null,
+        "max_width": null,
+        "min_height": null,
+        "min_width": null,
+        "order": null,
+        "overflow": null,
+        "overflow_x": null,
+        "overflow_y": null,
+        "padding": null,
+        "right": null,
+        "top": null,
+        "visibility": null,
+        "width": null
+      }
+    },
+    "e6397f3ab26f492fabf44c320685faa7": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.2.0",
+      "state": {
+        "_model_module": "@jupyter-widgets/controls",
+        "_model_module_version": "1.2.0",
+        "_model_name": "LinkModel",
+        "_view_count": null,
+        "_view_module": "@jupyter-widgets/controls",
+        "_view_module_version": "1.2.0",
+        "_view_name": null,
+        "source": [
+          "IPY_MODEL_e73fc181fcee4af491db05950949ab18",
+          "color"
+        ],
+        "target": [
+          "IPY_MODEL_1c28f02793134997b378eb3cca412fd7",
+          "value"
+        ]
+      }
+    },
+    "4381be61389c4a9da6a0090fc558cc77": {
+      "model_name": "LinkModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.2.0",
+      "state": {
+        "_model_module": "@jupyter-widgets/controls",
+        "_model_module_version": "1.2.0",
+        "_model_name": "LinkModel",
+        "_view_count": null,
+        "_view_module": "@jupyter-widgets/controls",
+        "_view_module_version": "1.2.0",
+        "_view_name": null,
+        "source": [
+          "IPY_MODEL_e73fc181fcee4af491db05950949ab18",
+          "size"
+        ],
+        "target": [
+          "IPY_MODEL_72be08946762489b90ccf3230cdd6770",
+          "value"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "fe44712b94634e7ca39ead9df1346490"}
+</script>
+
+
+</body>
+</html>
